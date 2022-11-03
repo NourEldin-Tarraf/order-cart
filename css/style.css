@@ -1,0 +1,183 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"); */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #e6e6f0;
+  margin: 0 20px;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  position: relative;
+  background-color: #fff;
+  padding: 20px 30px;
+  border-radius: 30px;
+  -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  width: 250px;
+}
+@media (max-width: 676px) {
+  .card {
+    width: 75%;
+  }
+}
+
+.top {
+  position: relative;
+  text-align: center;
+}
+.top p {
+  color: gray;
+  font-size: 100%;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.top h1 {
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+
+.food .ri-star-line {
+  color: rgb(255, 0, 0);
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.top img {
+  width: 100%;
+  border-radius: 50%;
+  margin-top: 15px;
+}
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  gap: 4px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.menu__dot {
+  background-color: #cbcbcb;
+  height: 7px;
+  width: 7px;
+  border-radius: 50%;
+}
+
+.flex-container {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-container .item {
+  text-align: center;
+}
+
+.flex-container .item h1 {
+  font-weight: 800;
+  margin-top: 10px;
+  font-size: 100%;
+}
+
+.flex-container .item p {
+  color: rgba(119, 119, 119, 0.521);
+  font: size 100%;
+}
+
+.order {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.order .item {
+  display: block;
+  justify-content: space-between;
+  font-size: 10px;
+  align-items: center;
+  text-align: center;
+}
+.order .i1 h1 {
+  color: rgb(0, 0, 0);
+}
+.order .i2 h1 {
+  color: rgb(46, 216, 46);
+}
+.order .i3 h1 {
+  color: red;
+}
+
+.order .item p {
+  color: rgba(119, 119, 119, 0.473);
+  font-size: 15px;
+}
+
+.btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin: auto;
+  margin-top: 20px;
+  text-decoration: none;
+  background-color: #fe724c;
+  padding: 5px;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 15px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+.btn i {
+  font-size: 28px;
+}
+.btn:hover {
+  background-color: #da6900;
+}
+.btn:active {
+  box-shadow: 0 0 13px 4px #da6900;
+}
